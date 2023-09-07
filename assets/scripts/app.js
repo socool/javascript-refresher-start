@@ -49,7 +49,6 @@ export default (userName, message) => {
 };
 
 // CH 23 revisiting objects & classes
-
 const user = {
   name: "John",
   age: 30,
@@ -73,3 +72,23 @@ class User {
 const user1 = new User("John", 30);
 console.log(user1.name, user1.age);
 user1.greet();
+
+// CH24 revisiting arrays & array method like map()
+const hobbies = ["Sports", "Cooking", "Reading"];
+console.log(hobbies[0]);
+
+hobbies.push("Music");
+console.log(hobbies);
+
+const index = hobbies.findIndex((hobby) => {
+  return hobby === "Cooking";
+});
+console.log(index);
+
+const editedHobbies = hobbies.map((hobby) => {
+  return hobby + "!";
+});
+console.log(editedHobbies);
+
+const editedHobbies2 = hobbies.map((hobby) => ({ text: hobby }));
+console.log(editedHobbies2);
