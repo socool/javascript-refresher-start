@@ -42,4 +42,10 @@ function combine(a, b, c) {
   return (a * b) / c;
 }
 
+// CH21 arrow function
+//export default function(){
+export default (userName, message) => {
+  return `Hello! ${userName} ${message}`;
+};
+
 console.log(userMessage);
