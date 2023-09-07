@@ -37,4 +37,9 @@ function greet(userName, message) {
 const greet1 = greet("John", "How are you?");
 console.log(greet1);
 
+// exercise: working with functions
+function combine(a, b, c) {
+  return (a * b) / c;
+}
+
 console.log(userMessage);
