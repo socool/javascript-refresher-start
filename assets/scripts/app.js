@@ -48,4 +48,28 @@ export default (userName, message) => {
   return `Hello! ${userName} ${message}`;
 };
 
-console.log(userMessage);
+// CH 23 revisiting objects & classes
+
+const user = {
+  name: "John",
+  age: 30,
+  greet() {
+    console.log(`Hello! ${this.name}`);
+    console.log(this.age);
+  },
+};
+console.log(user.name, user.age);
+
+class User {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  greet() {
+    console.log(`Hello! ${this.name}`);
+  }
+}
+
+const user1 = new User("John", 30);
+console.log(user1.name, user1.age);
+user1.greet();
