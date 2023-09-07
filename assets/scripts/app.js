@@ -101,3 +101,12 @@ function transformToObjects(numberArray) {
 }
 
 console.log(transformToObjects([1, 2, 3]));
+
+const [person1, person2, person3] = ["John", "Bob", "Alice"];
+
+const { name: userName, age } = {
+  name: "Max",
+  age: 34,
+};
+
+console.log(userName, age);
