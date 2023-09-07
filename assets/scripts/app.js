@@ -110,3 +110,30 @@ const { name: userName, age } = {
 };
 
 console.log(userName, age);
+
+class LocalStorage {
+  constructor() {
+    this.items = {};
+  }
+  setItem(key, value) {
+    this.items[key] = value;
+  }
+  getItem(key) {
+    return this.items[key];
+  }
+  removeItem(key) {
+    delete this.items[key];
+  }
+  clear() {
+    this.items = {};
+  }
+}
+
+let localStorage = new LocalStorage();
+
+function storeOrder(id, currency, amount) {
+  localStorage.setItem("us", id);
+}
+
+storeOrder(1, "USD", 100);
+console.log(localStorage.getItem("us"));
