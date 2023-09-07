@@ -92,3 +92,11 @@ console.log(editedHobbies);
 
 const editedHobbies2 = hobbies.map((hobby) => ({ text: hobby }));
 console.log(editedHobbies2);
+
+//code excercise 2: excercise array method
+function transformToObjects(numberArray) {
+  return numberArray.map((number) => {
+    return { val:number };
+  });
+}
+}
