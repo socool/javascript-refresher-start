@@ -137,3 +137,18 @@ function storeOrder(id, currency, amount) {
 
 storeOrder(1, "USD", 100);
 console.log(localStorage.getItem("us"));
+
+const newHobbies = ["Music"];
+//normal merge
+const mergedHobbies = [hobbies, newHobbies];
+console.log(mergedHobbies);
+//spread operator
+const mergedHobbies2 = [...hobbies, ...newHobbies];
+console.log(mergedHobbies2);
+
+const extendedUser = {
+  isAdmin: true,
+  ...user, // use spread operator for fetch data in user object
+};
+
+console.log(extendedUser);
