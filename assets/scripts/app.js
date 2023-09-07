@@ -96,7 +96,8 @@ console.log(editedHobbies2);
 //code excercise 2: excercise array method
 function transformToObjects(numberArray) {
   return numberArray.map((number) => {
-    return { val:number };
+    return { val: number };
   });
 }
-}
+
+console.log(transformToObjects([1, 2, 3]));
