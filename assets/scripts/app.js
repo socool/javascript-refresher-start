@@ -23,4 +23,11 @@ userMessage = "Goodbye world";
 const customerMessage = "Hi there";
 //customerMessage = "Bye there"; // found type error is read-only
 
+// CH19 revisiting operators
+console.log("hello" + "world");
+console.log(10 > 5);
+if (10 === 10) {
+  console.log("10 is equal to 10");
+}
+
 console.log(userMessage);
