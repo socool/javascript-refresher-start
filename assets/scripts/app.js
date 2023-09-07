@@ -30,4 +30,11 @@ if (10 === 10) {
   console.log("10 is equal to 10");
 }
 
+// CH20 revisiting functions & parameters
+function greet(userName, message) {
+  return `Hello! ${userName} ${message}`;
+}
+const greet1 = greet("John", "How are you?");
+console.log(greet1);
+
 console.log(userMessage);
